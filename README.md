@@ -26,4 +26,4 @@ or you can use it as development environment
 npm run build:dev
 ```
 
-Special thanks for Amer Lotfi :heart:
+Special thanks to Amer Lotfi :heart:

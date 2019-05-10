@@ -1,4 +1,3 @@
-node_modules
 .idea
-package-lock.json
-.gitignore
+node_modules
+dist

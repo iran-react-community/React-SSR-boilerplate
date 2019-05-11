@@ -1,5 +1,6 @@
-# reactzero-boilerplate
-a SSR poilerplate for react functional with hooks ( react version +16.8 ) 
+# React_SSR_boilerplate
+
+a SSR poilerplate for react functional with hooks ( react version +16.8 ,jss , webpack , express ) 
 
 #### step 1 
 

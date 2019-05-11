@@ -1,37 +1,61 @@
-import React, {Component, useState} from 'react';
+import React, {useState} from 'react';
 import Helmet from "react-helmet";
 import {Switch, Route} from 'react-router-dom';
 import {NavLink} from 'react-router-dom';
-import styles from '../styles/styles.pcss';
+import injectSheet from 'react-jss'
 
-function Menu() {
+const styles = {
+    active: {
+        color: 'green',
+        margin: {
+            // jss-expand gives more readable syntax
+            top: 5, // jss-default-unit makes this 5px
+            right: 0,
+            bottom: 0,
+            left: '1rem'
+        },
+    },
+    componentBody: {
+        fontStyle: 'italic'
+    },
+    clickMe:{
+        padding:10,
+        backgroundColor:'#333',
+        color:'#fff'
+    }
+};
+
+const Menu=injectSheet(styles)((props) =>{
+    const {classes}=props;
     return (
         <div>
             <ul>
                 <li>
-                    <NavLink exact to={'/'} activeClassName={styles.active}>Homepage</NavLink>
+                    <NavLink exact to={'/'} activeClassName={classes.active}>Homepage</NavLink>
                 </li>
                 <li>
-                    <NavLink activeClassName={styles.active} to={'/about'}>About</NavLink>
+                    <NavLink activeClassName={classes.active} to={'/about'}>About</NavLink>
                 </li>
                 <li>
-                    <NavLink activeClassName={styles.active} to={'/contact'}>Contact</NavLink>
+                    <NavLink activeClassName={classes.active} to={'/contact'}>Contact</NavLink>
                 </li>
             </ul>
         </div>
     );
-}
+})
 
 
-function Homepage() {
+const Homepage=injectSheet(styles)((props) =>{
+    const {classes}=props;
+
     return (
-        <div className={styles.component}>
+        <div className={classes.componentBody}>
             <Helmet title="Home Page"/>
             <Menu/>
             <h1>Homepage</h1>
         </div>
     );
-}
+})
 
 function About() {
     return (
@@ -43,8 +67,9 @@ function About() {
     );
 }
 
-function Contact() {
+const Contact=injectSheet(styles)((props) =>{
     const [counter,setCounter]=useState(0);
+    const {classes}=props;
 
     function handleThis(){
         setCounter(counter+1)
@@ -55,12 +80,12 @@ function Contact() {
             <Helmet title="Contact us"/>
             <Menu/>
             <h1>Contact</h1>
-            <div className={styles.clickMe} onClick={()=>handleThis()}>Click on me to count this :{counter}</div>
+            <div className={classes.clickMe} onClick={()=>handleThis()}>Click on me to count this :{counter}</div>
         </div>
     );
-}
+})
 
-export default function App () {
+function App () {
         return (
             <div>
                 <Helmet
@@ -81,3 +106,5 @@ export default function App () {
             </div>
         );
 }
+
+export default injectSheet(styles)(App)

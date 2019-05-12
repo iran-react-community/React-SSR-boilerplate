@@ -5,7 +5,7 @@ a SSR poilerplate for react functional with hooks ( react version +16.8 ,jss , w
 #### step 1 
 
 ```
-git clone https://github.com/nimahkh/reactzero-boilerplate.git
+git clone https://github.com/iran-react-community/React-SSR-boilerplate.git
 ```
 
 #### step 2

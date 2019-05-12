@@ -1,4 +1,4 @@
-# React_SSR_boilerplate
+# React-SSR-boilerplate
 
 a SSR poilerplate for react functional with hooks ( react version +16.8 ,jss , webpack , express ) 
 

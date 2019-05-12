@@ -27,4 +27,3 @@ or you can use it as development environment
 yarn build:dev
 ```
 
-Special thanks to Amer Lotfi :heart:

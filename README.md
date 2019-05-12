@@ -11,20 +11,20 @@ git clone https://github.com/iran-react-community/React-SSR-boilerplate.git
 #### step 2
 
 ```
-npm i  && npm i -g webpack
+yarn install  && yarn global add webpack
 ```
 #### step 3
 
 run production environment
 
 ```
-npm run build:prod && npm run start:pros
+yarn build:prod && yarn start:pros
 ```
 
 or you can use it as development environment 
 
 ```
-npm run build:dev
+yarn build:dev
 ```
 
 Special thanks to Amer Lotfi :heart:

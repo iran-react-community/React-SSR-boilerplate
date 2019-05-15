@@ -18,7 +18,7 @@ yarn install  && yarn global add webpack
 run production environment
 
 ```
-yarn build:prod && yarn start:pros
+yarn build:prod && yarn start:prod
 ```
 
 or you can use it as development environment 

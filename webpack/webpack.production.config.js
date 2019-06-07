@@ -13,7 +13,7 @@ module.exports = [
     {
         name: 'client',
         target: 'web',
-        entry: `${srcDir}/client.jsx`,
+        entry: `${srcDir}/client.js`,
         output: {
             path: distDir,
             filename: 'client.js',
@@ -92,7 +92,7 @@ module.exports = [
     {
         name: 'server',
         target: 'node',
-        entry: `${srcDir}/server.jsx`,
+        entry: `${srcDir}/server.js`,
         output: {
             path: distDir,
             filename: 'server.js',

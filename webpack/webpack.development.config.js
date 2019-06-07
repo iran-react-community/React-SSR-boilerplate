@@ -9,7 +9,7 @@ module.exports = [
         mode : 'development',
         name: 'client',
         target: 'web',
-        entry: `${srcDir}/client.jsx`,
+        entry: `${srcDir}/client.js`,
         output: {
             path: path.join(__dirname, 'dist'),
             filename: 'client.js',
@@ -70,7 +70,7 @@ module.exports = [
     {
         name: 'server',
         target: 'node',
-        entry: `${srcDir}/server.jsx`,
+        entry: `${srcDir}/server.js`,
         output: {
             path: path.join(__dirname, 'dist'),
             filename: 'server.js',

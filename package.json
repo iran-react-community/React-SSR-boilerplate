@@ -24,6 +24,7 @@
     "react-helmet": "^5.2.1",
     "react-hot-loader": "^4.9.0",
     "react-jss": "^8.6.1",
+    "react-redux": "^7.0.3",
     "react-router-dom": "^5.0.0"
   },
   "devDependencies": {
@@ -31,6 +32,7 @@
     "@babel/core": "^7.4.5",
     "@babel/node": "^7.4.5",
     "@babel/preset-env": "^7.4.4",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.0.0",
     "autoprefixer": "^9.5.1",
     "babel-loader": "^8.0.0-beta.6",
@@ -46,6 +48,7 @@
     "html-webpack-plugin": "^3.2.0",
     "isomorphic-style-loader": "^5.0.1",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "redux": "^4.0.1",
     "stats-webpack-plugin": "^0.7.0",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.1.2",

@@ -2,6 +2,13 @@
 
 a SSR poilerplate for react functional with hooks ( react version +16.8 ,jss , webpack , express ) 
 
+#### features added 
+
+- ssr provider supporting
+- hot reloading
+- jss support
+
+
 #### step 1 
 
 ```
@@ -26,4 +33,6 @@ or you can use it as development environment
 ```
 yarn build:dev
 ```
+
+
 
